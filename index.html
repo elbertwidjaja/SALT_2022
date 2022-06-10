@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMPTIF Regeneration</title>
 </head>
+
 <body>
     <div id="answer">Write your answer here using javascript</div>
     <button type="button" onclick="changeAnswer()">Click Me</button>
-    
     <script>
         let answer = document.getElementById("answer");
-        
-        function changeAnswer() {  
-            // write your code here
-            
+
+        function changeAnswer() {
+            let newForm = document.createElement("form");
+
+            let newInputElement = document.createElement("input");
+            newInputElement.type = "text";
+            newInputElement.id = "username";
+
+            let inputLabel = document.createElement("label");
+            inputLabel.htmlFor = "username";
+            inputLabel.textContent = "Input your Name:";
+
+            newForm.append(inputLabel);
+            newForm.append(newInputElement);
+
+            answer.appendChild(newForm);
+            function updateText(event) {
+                let enteredText = event.target.value;
+                answer.textContent = "Your name is " + enteredText;
+            }
+            document.getElementById("username").addEventListener("change", updateText);
         }
     </script>
 </body>
+
 </html>
