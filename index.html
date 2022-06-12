@@ -7,15 +7,17 @@
     <title>HMPTIF Regeneration</title>
 </head>
 <body>
-    <div id="answer">Write your answer here using javascript</div>
+    <div id="answer">Your name is <input type="text" id="myInput"></div>
     <button type="button" onclick="changeAnswer()">Click Me</button>
+    
+    <p id="nama"></p>
     
     <script>
         let answer = document.getElementById("answer");
         
-        function changeAnswer() {  
-            // write your code here
-            
+        function changeAnswer() {
+            var x = document.getElementById("myInput").value;
+            document.writeln("Hello "+x);
         }
     </script>
 </body>

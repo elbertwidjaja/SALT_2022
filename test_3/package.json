@@ -1,0 +1,13 @@
+{
+  "name": "test_3",
+  "version": "1.0.0",
+  "description": "In this test you are required to make nodejs env to work.\r - Download Nodejs from [nodejs](https://nodejs.org/en/)\r - Go to your terminal/command prompt\r - Change the current working directory to [`server.js`](https://github.com/elbertwidjaja/SALT_2022/blob/main/test_3/server.js)'s file path\r - Run the following command \r ```\r npm init -y\r npm start\r ```\r - Go to your browser and type http://localhost:3000\r - Happy debugging",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
