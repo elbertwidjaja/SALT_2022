@@ -1,7 +1,7 @@
 const http = require("http");
 
-const myServer = htttp.createServer((req, ress) => {
-    reqs.end("<h1>Congratulations.. You have passed</h1>");
+const myServer = http.createServer(function(req, res) {
+    res.end("Congratulations.. You have passed");
 });
 
-server.listen(3000);
+myServer.listen(3000);
