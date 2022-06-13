@@ -7,7 +7,10 @@
     <title>HMPTIF Regeneration</title>
 </head>
 <body>
-    <div id="answer">Write your answer here using javascript</div>
+    <div>
+        nama : <input type="text" id="nama">
+    </div>
+    
     <button type="button" onclick="changeAnswer()">Click Me</button>
     
     <script>
@@ -15,6 +18,9 @@
         
         function changeAnswer() {  
             // write your code here
+            var nama=document.getElementById("nama").value;
+            document.writeln("\n"+nama);
+            
             
         }
     </script>
